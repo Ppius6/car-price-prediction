@@ -32,6 +32,8 @@ To run this application, you will need to create a virtual environment and insta
 
 Once the application is running, input the required vehicle details into the app interface and click the "Predict Price" button to view the estimated market price. For future value and usage costs, provide the expected usage period and yearly mileage, then click the "Calculate Future Value and Costs" button.
 
+Interact with the model here: https://car-prices-prediction.streamlit.app/
+
 ## Model Details
 The predictive model is built using XGBoost, optimized for robust performance on a wide range of vehicle data. The model uses features such as engine type, mileage, year, and more to predict prices.
 
