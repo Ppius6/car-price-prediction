@@ -8,13 +8,30 @@ This Streamlit application provides an interface for predicting the current and 
 - Calculate the future value of a vehicle considering its usage period and mileage.
 - Estimate total usage costs based on fuel type and consumption.
 
-## Installation
-To run this application, you will need to install several Python packages including Streamlit, pandas, and scikit-learn.
+To run this application, you will need to create a virtual environment and install several Python packages including Streamlit, pandas, and scikit-learn.
 
-```
-pip install streamlit pandas numpy scikit-learn joblib
-```
+1. Create a virtual environment:
+  ```
+  python -m venv env
+  ```
+2. Activate the virtual environment:
+
+  On Windows:
+  ```
+  .\env\Scripts\activate
+  ```
+  
+  - On macOS/Linux:
+    
+  ```
+  source env/bin/activate
+  ```
+
+3. Install the required packages:
+  ```pip install streamlit pandas numpy scikit-learn joblib```
+
 Once the application is running, input the required vehicle details into the app interface and click the "Predict Price" button to view the estimated market price. For future value and usage costs, provide the expected usage period and yearly mileage, then click the "Calculate Future Value and Costs" button.
 
 ## Model Details
 The predictive model is built using XGBoost, optimized for robust performance on a wide range of vehicle data. The model uses features such as engine type, mileage, year, and more to predict prices.
+
